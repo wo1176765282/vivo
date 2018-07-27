@@ -1,0 +1,434 @@
+@import url("base.css");
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    font-family: 苹方;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #ececec;
+}
+#vivo-head-wrap{
+    width: 100%;
+    background-color: rgba(26,26,26,.9);
+    font-size: 14px;
+    z-index: 999;
+}
+.gb-vivo-head{
+    position: relative;
+    width: 1200px;
+    height: 44px;
+    margin: 0 auto;
+}
+.bg-vivo-title{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.bg-vivo-title li{
+    /*width: auto;*/
+    height: 100%;
+    /*overflow: hidden;*/
+    position: relative;
+}
+.bg-vivo-title-a{
+    display: block;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 44px;
+    margin: 0 22px;
+}
+.bg-vivo-nav{
+    position: absolute;
+    width: 10%;
+    height: 22px;
+    top: 12px;
+    right :0;
+    display: flex;
+    justify-content: space-around;
+}
+.bg-vivo-nav  a i{
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.nex-wrap{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    width: 100px;
+    height: 0;
+    /*padding-top: 10px;*/
+    padding-left: 23px;
+    box-sizing: border-box;
+    background-color: rgba(26,26,26,.9);
+    z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.x-wrap{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    width: 120px;
+    height: 0;
+    /*padding-top: 10px;*/
+    padding-left: 23px;
+    background-color: rgba(26,26,26,.9);
+    z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.y-wrap{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    width: 120px;
+    height: 0;
+    /*padding-top: 10px;*/
+    padding-left: 23px;
+    background-color: rgba(26,26,26,.9);
+    z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.bian{
+    display: block;
+    margin-top: 15px;
+    line-height: 20px;
+    color: #f9f9f9;
+    font-size: 12px;
+}
+
+
+
+
+.bg-vivo-title-a:hover{
+    color: #999;
+}
+.gb-vivo-head i:hover{
+    color: #999;
+}
+/*.nex:hover .nex-wrap,.x-wrap{
+    transform: translateY(166px);
+    transition: .5s;
+}*/
+
+/*
+.x:hover .x-wrap{
+    transform: translateY(424px);
+    transition: .5s;
+}
+.y:hover .y-wrap{
+    transform: translateY(424px);
+    transition: .5s;
+}
+*/
+.bian:hover{
+    color: #999;
+}
+
+
+
+
+
+#vivo-banner{
+    width: 100%;
+    height: 1150px;
+    position: relative;
+}
+#vivo-high-wrap{
+    width: 100%;
+    height: 850px;
+    position: absolute;
+}
+.vivo-high-wrap-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.vivo-banner-x21myz-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url("../img/vivo-banner-x21myz-bg.jpg") center;
+    background-size: cover;
+}
+.vivo-banner-z1-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url("../img/vivo-banner-z1-bg.jpg") center;
+    background-size: cover;
+}
+.vivo-banner-x21ks-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url("../img/vivo-banner-x21ks-bg.jpg") center;
+    background-size: cover;
+}
+.vivo-banner-x21izs-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url("../img/vivo-banner-x21izs-bg.jpg") center;
+    background-size: cover;
+}
+#vivo-high-wrap ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#vivo-high-wrap ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+#vivo-high-wrap ul li .banner-link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.banner-section{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin :auto;
+    text-align: center;
+}
+.banner-section-title{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 380px;
+}
+.vivo-low-wrap{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.vivo-low-wrap ul{
+    width: 100%;
+    height: 300px;
+}
+.vivo-low-wrap ul li{
+    width: 25%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.vivo-low-wrap a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: left;
+
+}
+.vivo-promos-y85-x2{
+    background: url("../img/vivo-promos-y85-x2.jpg") center center;
+    background-size: cover;
+}
+.vivo-promos-nextvc-x2{
+    background: url("../img/vivo-promos-nextvc-x2.jpg") center center;
+    background-size: cover;
+}
+.vivo-promos-y75s-x2{
+    background: url("../img/vivo-promos-y75s-x2.jpg") center center;
+    background-size: cover;
+}
+.vivo-promos-nexpc-x2{
+    background: url("../img/vivo-promos-nexpc-x2.jpg") center center;
+    background-size: cover;
+}
+
+
+
+
+.vivo-low-wrap-title{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    color: #333;
+    z-index: 3;
+}
+
+.color-w{
+    color: #fff;
+}
+
+
+.vivo-low-wrap a:hover{
+    transform: scale(1.05,1.05);
+    transition: .5s;
+
+}
+
+footer{
+    width: 100%;
+    height: 360px;
+    margin-top: 150px;
+}
+.vivo-foot-bg{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    font-size: 12px;
+    color: #333;
+}
+.vivo-foot-bg-top{
+    width: 100%;
+    height: 260px;
+    border-bottom: 1px solid #d1d1d1;
+
+}
+.vivo-foot-list1{
+    width: 80%;
+    height: 170px;
+    float: left;
+}
+.vivo-foot-list1 li{
+    width: 20%;
+    height: 100%;
+    /*padding-right: 20px;*/
+    /*box-sizing: border-box;*/
+    float: left;
+}
+.vivo-foot-list1 li h5{
+    line-height: 30px;
+    font-weight: 600;
+}
+.vivo-foot-list1 li a span{
+    font-size: 11px;
+    color: #333;
+    line-height: 20px;
+    cursor: pointer;
+}
+.vivo-foot-list1 li a span:hover{
+    color: #007aff;
+}
+
+
+.vivo-foot-call{
+    width: 20%;
+    height: 90px;
+    float: right;
+}
+.online{
+    width: 150px;
+    height: 25px;
+    float: right;
+}
+.online a{
+    float: right;
+    font-size: 25px;
+    color: #00b3ff;
+}
+.online i{
+    font-size: 28px;
+    color: #00b3ff;
+}
+.phone{
+    float: right;
+    width: 150px;
+}
+.vivo-foot-call span{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000;
+    float: right;
+}
+.vivo-foot-call p{
+    line-height: 20px;
+    font-size: 10px;
+    color: #b0b0b0;
+    float: right;
+}
+.foot-bottom{
+    width: 100%;
+    height: 45px;
+    padding-top: 35px;
+    color: #333;
+    font-size: 8px;
+}
+.foot-bottom p{
+    display: inline-block;
+}
+.foot-bottom a{
+    color: #333;
+    font-size: 8px;
+}
+
+.foot-bottom-right{
+    width: 190px;
+    height: 40px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-bottom-right a{
+    font-size: 11px;
+    color: #333;
+}
+.foot-bottom-right span{
+    font-size: 11px;
+    color: #333;
+}
+.foot-bottom-right i{
+    font-size: 12px;
+    color: #333;
+}
+.foot-bottom-right a:hover{
+    color: #00b3ff;
+}
+.foot-bottom-right a:hover i{
+    color: #00b3ff;
+}
